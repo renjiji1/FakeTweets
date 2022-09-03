@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+
+<canvas id="myCanvas"></canvas>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>FakeATweet</title>
+    <link rel="stylesheet" href="StyleSheet1.css">
+    <script src="Twake.js"></script>
+
+</head>
+<body>
+
+    <div id="Scrollable">
+        <header class="center">Fake A Tweet</header>
+        <main>
+            <form style="margin-top: 3%">
+                <div class="float-container" style="margin-left: 30%">
+                    <div class="float-child">
+                        <input type="radio" id="light" name="theme" value="Light">
+                        <label for="light">Light</label><br>
+                    </div>
+                    <div class="float-child" style="margin-left: 15%">
+                        <input type="radio" id="blue" class="center" name="theme" value="Blue">
+                        <label for="blue">Blue</label><br>
+                    </div>
+                    <div class="float-child" style="margin-left: 15%">
+                        <input type="radio" id="dark" class="right" name="theme" value="Dark">
+                        <label for="dark">Dark</label>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div id="tweetBg" class="float-container center">
+                <div>
+                    <label for="profile">
+                        <img src="C:\Users\randy\Documents\FakeATweet\defaultPfp.png" alt="pfp" id="pfp" class="border">
+                    </label>
+
+                </div>
+
+                <label for="name" name="hide" style="float: left; margin-left: 1.5%">name</label>
+                <label for="handle" name="hide" style="float: left; margin-left: 22%">handle</label>
+                <label for="date" name="hide" style="float: left; margin-left: 14%">date</label> <br />
+                <input type="text" id="name" name="txt" size="2" class="border float-child txt" style="color: #D3D3D3">
+                <p id="nameTxt" class="float-child" style="font-weight: bold; margin-top: -.7%; font-size: .7em; color: #000000 "></p>
+                <div class="float-child" id="checkmarkDiv">
+                    <img src="CheckmarkBlue.png" alt="checkmark" id="checkmark" width="20" height="20" />
+                </div>
+
+                <input type="text" id="handle"  name="txt" size="8" class="border float-child">
+                <p id="handleTxt" class="float-child" style="color: #A0A0A0; font-weight: lighter; margin-top: -.7%; font-size: .7em"></p>
+                <img src="Dot.png" alt="dot" id="dot" width="4px" height="4px" />
+                <input type="text" id="date" name="txt" size="6" class="border float-child">
+                <p id="dateTxt" class="float-child" style="color: #A0A0A0; font-weight: lighter; margin-top: -.7%; font-size: .7em"></p>
+
+                
+                <textarea id="Tweet" name="txt" rows="1" cols="53" class="border float-child"></textarea>
+                <div style="margin-top: 0%" id="TweetPush"></div>
+
+                <input type="file" id="tweetImgInp" name="tweetImgInp" class="float-child" style="margin-left: 34%" accept="image/jpeg, image/png" /><br />
+
+                <div id="tweetImgDiv">
+                    <label for="tweetImgInp">
+                        <img src="ImageIcon.gif" alt="tweetImg" id="tweetImg" />
+                    </label>
+                </div>
+                <div class="float-child" style="width: 95%; margin-left: 2%">
+                    <img src="commentIcon.png" alt="comment" width="25" height="25" id="comment" style="margin-left:13%; float: left" />
+                    <input type="text" id="commentNum" name="txt" class="float-child Nums border" maxlength="6" />
+                    <img src="retweetIcon.png" alt="retweet" width="25" height="25" id="retweet" style="margin-left:8%; float: left" />
+                    <input type="text" id="retweetNum" name="txt" class="float-child Nums border" maxlength="6" />
+                    <img src="heartIcon.png" alt="heart" width="25" height="25" id="heart" style="margin-left:8%; float: left" />
+                    <input type="text" id="heartNum" name="txt" class="float-child Nums border" maxlength="6" />
+                    <img src="ShareIcon.png" alt="share" width="25" height="25" id="share" style="margin-left:8%; float: left" />
+                </div><br />
+                <input type="file" id="profile" name="profile" class="noShow" accept="image/jpeg, image/png" />
+
+            </div>
+        </footer>
+        <main>
+            <form id="checks" style="margin-top: 3%; margin-left: 40%">
+                <input type="checkbox" id="checkmarkBox" name="checkmarkBox" value="Checkmark" />
+                <label for="checkmarkBox">checkmark</label>
+                <input type="checkbox" id="done" name="done" value="Done" />
+                <label for="done">done</label>
+            </form> <br />
+            <div id="p1" >
+                Have you ever wanted to see Elon musk tweet that Game of Thrones season 8 was a cinematic masterpiece. Or see Joe
+                Biden say that he would've busted it down sexual style on capitol hill if he wasn't so old. Here I offer an addless expierence
+                where you can make the most devious defamitory statements. 
+            </div>
+            <img src="JoeRacism.png" alt="JoeTweet" style="margin-left: 60%; margin-top: -20%; float: left"/>
+        </main>
+    </div>
+    <div id="Unscrollable">
+        
+        <main>
+            <div class="sideTxt">
+                If on Windows Open The Sniping Tool to Save Your Fake Tweet <br />
+                If on Mobile, Screenshot and Crop your Image According To Your Device's Method
+            </div>
+            <div class="sideTxt">
+                Play some of the games I created for free at <a href="https://renjiji.itch.io/">itch.io</a>.
+                They call me the next Toby Fox so I wouldn't be slacking.
+            </div>
+            <div class="sideTxt">
+                Check out my <a href="https://twitter.com/RenjijiDev" style="color: blue">twitter</a> if you want.
+            </div>
+            
+        </main>
+        <div id="line"></div>
+    </div>
+</body>
+</html>
